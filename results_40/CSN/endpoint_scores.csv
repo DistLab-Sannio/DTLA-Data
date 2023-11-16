@@ -1,0 +1,30 @@
+op_code;operation;endpoint;score_proxy
+ab1;{'admin_get_all_contacts'};{'GET:/api/v1/adminbasicservice/adminbasic/contacts'};{1.7066675897465833}
+ab2;{'admin_get_all_prices'};{'GET:/api/v1/adminbasicservice/adminbasic/prices'};{1.9759511273624601}
+ab3;{'admin_modify_contact'};{'PUT:/api/v1/adminbasicservice/adminbasic/contacts'};{1.5459514008031787}
+ab4;{'admin_modify_price'};{'PUT:/api/v1/adminbasicservice/adminbasic/prices'};{1.952926425300617}
+ao1;{'admin_create_order'};{'POST:/api/v1/adminorderservice/adminorder'};{1.7143177614710883}
+ao2;{'admin_get_all_orders'};{'GET:/api/v1/adminorderservice/adminorder'};{1.8042811376346932}
+ao3;{'admin_update_order'};{'PUT:/api/v1/adminorderservice/adminorder'};{2.33842762203414}
+ar1;{'admin_get_all_routes'};{'GET:/api/v1/adminrouteservice/adminroute'};{2.2021164218062528}
+as1;{'get_assurance_types'};{'GET:/api/v1/assuranceservice/assurances/types'};{2.843121081265697}
+at1;{'admin_create_travel'};{'POST:/api/v1/admintravelservice/admintravel'};{1.733170682157054}
+at2;{'admin_get_all_travels'};{'GET:/api/v1/admintravelservice/admintravel'};{4.073436919898224}
+at3;{'admin_uptdate_travel'};{'PUT:/api/v1/admintravelservice/admintravel'};{2.0430354332506035}
+au1;{'admin_add_random_user'};{'POST:/api/v1/adminuserservice/users'};{0.3466877389817762}
+au2;{'admin_get_all_users'};{'GET:/api/v1/adminuserservice/users'};{1.5093551255370534}
+ca1;{'cancel_order'};{'GET:/api/v1/cancelservice/cancel/{orderId}/{loginId}'};{1.4473515839149427}
+ca2;{'cancel_refund_order'};{'GET:/api/v1/cancelservice/cancel/refound/{orderId}'};{2.1626020354815125}
+co1;{'query_contacts'};{'GET:/api/v1/contactservice/contacts/account/{accountId}'};{2.1104434279363313}
+ex1;{'collect_ticket'};{'GET:/api/v1/executeservice/execute/collected/{orderId}'};{1.8830276883035222}
+ex2;{'execute_ticket'};{'GET:/api/v1/executeservice/execute/execute/{orderId}'};{1.9412394075295896}
+fo1;{'get_food_types'};{'GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}'};{1.847141550500208}
+ip1;{'pay_order_other', 'pay_order_hs'};{'POST:/api/v1/inside_pay_service/inside_payment'};{1.227678619249624}
+oh1;{'get_order_information_hs'};{'POST:/api/v1/orderservice/order/refresh'};{0.4726187170378336}
+oo1;{'get_order_information_other'};{'POST:/api/v1/orderOtherService/orderOther/refresh'};{0.4980519747688678}
+ph1;{'preserve_ticket_hs'};{'POST:/api/v1/preserveservice/preserve'};{2.20952486664457}
+po1;{'preserve_ticket_other'};{'POST:/api/v1/preserveotherservice/preserveOther'};{2.2436076421851925}
+th1;{'search_travel_hs_logged', 'search_travel_hs_external'};{'POST:/api/v1/travelservice/trips/left'};{3.4476704047282816}
+to1;{'search_travel_other_logged', 'search_travel_other_external'};{'POST:/api/v1/travel2service/trips/left'};{3.4192110108987497}
+tp1;{'get_travel_plan'};{'POST:/api/v1/travelplanservice/travelPlan/cheapest'};{3.46763610485054}
+us1;{'admin_login'};{'POST:/api/v1/users/login'};{0.21994914711278898}

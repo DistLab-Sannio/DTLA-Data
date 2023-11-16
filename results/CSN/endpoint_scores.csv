@@ -1,0 +1,26 @@
+op_code;operation;endpoint;score_proxy
+ab1;{'admin_get_all_contacts'};{'GET:/api/v1/adminbasicservice/adminbasic/contacts'};{1.7307443404497058}
+ab2;{'admin_get_all_prices'};{'GET:/api/v1/adminbasicservice/adminbasic/prices'};{1.6031747699903613}
+ao1;{'admin_create_order'};{'POST:/api/v1/adminorderservice/adminorder'};{1.3528016034538048}
+ao2;{'admin_get_all_orders'};{'GET:/api/v1/adminorderservice/adminorder'};{1.3951989482701166}
+ar1;{'admin_get_all_routes'};{'GET:/api/v1/adminrouteservice/adminroute'};{1.7043551858577461}
+as1;{'get_assurance_types'};{'GET:/api/v1/assuranceservice/assurances/types'};{3.225321516708436}
+at1;{'admin_create_travel'};{'POST:/api/v1/admintravelservice/admintravel'};{1.5467726771020376}
+at2;{'admin_get_all_travels'};{'GET:/api/v1/admintravelservice/admintravel'};{3.998401328451683}
+au1;{'admin_add_random_user'};{'POST:/api/v1/adminuserservice/users'};{0.306758618104283}
+au2;{'admin_get_all_users'};{'GET:/api/v1/adminuserservice/users'};{1.0478384266127183}
+ca1;{'cancel_order'};{'GET:/api/v1/cancelservice/cancel/{orderId}/{loginId}'};{2.1198712021519484}
+ca2;{'cancel_refund_order'};{'GET:/api/v1/cancelservice/cancel/refound/{orderId}'};{1.7597826706880493}
+co1;{'query_contacts'};{'GET:/api/v1/contactservice/contacts/account/{accountId}'};{2.644567405428214}
+ex1;{'collect_ticket'};{'GET:/api/v1/executeservice/execute/collected/{orderId}'};{2.204151208613935}
+ex2;{'execute_ticket'};{'GET:/api/v1/executeservice/execute/execute/{orderId}'};{2.433467290658022}
+fo1;{'get_food_types'};{'GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}'};{2.0903756694185085}
+ip1;{'pay_order_other', 'pay_order_hs'};{'POST:/api/v1/inside_pay_service/inside_payment'};{2.543247320742118}
+oh1;{'get_order_information_hs'};{'POST:/api/v1/orderservice/order/refresh'};{1.3985741910176013}
+oo1;{'get_order_information_other'};{'POST:/api/v1/orderOtherService/orderOther/refresh'};{1.4006697885018877}
+ph1;{'preserve_ticket_hs'};{'POST:/api/v1/preserveservice/preserve'};{1.540171291656582}
+po1;{'preserve_ticket_other'};{'POST:/api/v1/preserveotherservice/preserveOther'};{1.7122118899237933}
+th1;{'search_travel_hs_logged', 'search_travel_hs_external'};{'POST:/api/v1/travelservice/trips/left'};{3.6284565557436386}
+to1;{'search_travel_other_logged', 'search_travel_other_external'};{'POST:/api/v1/travel2service/trips/left'};{4.1904880226143595}
+tp1;{'get_travel_plan'};{'POST:/api/v1/travelplanservice/travelPlan/cheapest'};{3.7719791156725284}
+us1;{'admin_login'};{'POST:/api/v1/users/login'};{0.20833842189917812}
